@@ -1,4 +1,4 @@
-<Macro basic-config $hostname>
+<Macro basic $hostname>
 	ServerAdmin webmaster@$hostname
 	ServerName $hostname
 	ServerAlias www.$hostname

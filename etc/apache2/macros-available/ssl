@@ -1,4 +1,4 @@
-<Macro ssl-startssl $hostname $class>
+<Macro ssl $hostname $class>
 	SSLEngine on
 	SSLProtocol all -SSLv2
 
