@@ -1,10 +1,10 @@
 <Macro basic-config $hostname>
-        ServerAdmin webmaster@$hostname
-        ServerName $hostname
-        ServerAlias www.$hostname
-        DocumentRoot /var/www/$hostname
+	ServerAdmin webmaster@$hostname
+	ServerName $hostname
+	ServerAlias www.$hostname
+	DocumentRoot /var/www/$hostname
 
-        <Directory />
-                AllowOverride None
-        </Directory>
+	<Directory />
+		AllowOverride None
+	</Directory>
 </Macro>
