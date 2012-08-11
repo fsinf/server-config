@@ -1,0 +1,11 @@
+<Macro ssl-startssl $hostname $class>
+        SSLEngine on
+        SSLProtocol all -SSLv2
+
+        SSLCertificateFile /etc/ssl/certs/$hostname.pem
+        SSLCertificateKeyFile /etc/ssl/private/$hostname.key
+        SSLCertificateChainFile /etc/ssl/certs/sub.$class.server.ca.pem
+        SSLCACertificateFile /etc/ssl/certs/StartCom_Certification_Authority.pem
+
+	SetEnvIf User-Agent ".*MSIE.*" nokeepalive ssl-unclean-shutdown
+</Macro>
