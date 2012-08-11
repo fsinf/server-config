@@ -14,3 +14,15 @@ Depends: ${misc:Depends}
 Description: Common configuration for fsinf servers
  This package contains some common configuration for servers maintained
  by the Fachschaft Informatik - https://fsinf.at.
+
+Package: fsinf-server-config-startssl
+Architecture: all
+Depends: ${misc:Depends}
+Description: StartSSL intermediate certificates
+ This package installs startssl intermediate certificates
+
+Package: fsinf-server-config-apache-macros
+Architecture: all
+Depends: fsinf-server-config-startssl, libapache2-mod-macro, ${misc:Depends}
+Description: Common macros for apache2 mod_macro
+ This package contains various convenience macros for our apache configuration
