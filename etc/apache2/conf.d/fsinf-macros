@@ -1,0 +1,3 @@
+<IfModule macro_module>
+	Include /etc/apache2/macros-enabled/*
+</IfModule>
