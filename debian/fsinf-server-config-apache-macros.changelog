@@ -1,4 +1,4 @@
-fsinf-server-config-apache-macros (2012-08-11-2) precise; urgency=low
+fsinf-server-config (2012-08-11-2) precise; urgency=low
 
   * Add the "ssl-only" macro
 
