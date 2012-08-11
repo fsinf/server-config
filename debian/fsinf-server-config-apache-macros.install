@@ -1,1 +1,2 @@
-etc/apache2/
+etc/apache2/conf.d/fsinf-macros
+etc/apache2/macros-available/
