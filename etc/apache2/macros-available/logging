@@ -1,0 +1,5 @@
+<Macro logging $hostname $loglevel>
+	LogLevel $loglevel
+	ErrorLog /var/log/apache2/$hostname-error.log
+	CustomLog /var/log/apache2/$hostname-access.log combined
+</Macro>
