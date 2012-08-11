@@ -1,0 +1,16 @@
+Source: fsinf-server-config
+Section: misc
+Priority: optional
+Maintainer: Mathias Ertl <mati@fsinf.at>
+Standards-Version: 3.9.2
+Build-Depends: debhelper (>= 8)
+Homepage: https://git.fsinf.at/fsinf/server-config
+Vcs-Browser: https://git.fsinf.at/apt/server-config
+Vcs-Git: https://git.git.fsinf.at/apt/server-config.git
+
+Package: fsinf-server-config
+Architecture: all
+Depends: ${misc:Depends}
+Description: Common configuration for fsinf servers
+ This package contains some common configuration for servers maintained
+ by the Fachschaft Informatik - https://fsinf.at.
