@@ -1,3 +1,9 @@
+fsinf-server-config (2012-08-11-3) precise; urgency=low
+
+  * Add the "mediawiki" macro
+
+ -- Mathias Ertl <mati@fsinf.at>  Sat, 11 Aug 2012 19:54:15 +0200
+
 fsinf-server-config (2012-08-11-2) precise; urgency=low
 
   * Add the "ssl-only" macro
