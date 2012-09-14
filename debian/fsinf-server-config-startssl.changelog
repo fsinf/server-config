@@ -1,0 +1,11 @@
+fsinf-server-config (2012-09-10-1) precise; urgency=low
+
+  * Add StartCom Root CA and certificate bundle
+
+ -- Mathias Ertl <mati@fsinf.at>  Mon, 10 Sep 2012 21:22:43 +0200
+
+fsinf-server-config (2012-08-11-1) precise; urgency=low
+
+  * Initial version.
+
+ -- Mathias Ertl <mati@fsinf.at>  Sat, 11 Aug 2012 11:47:15 +0200

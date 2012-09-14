@@ -1,0 +1,28 @@
+Source: fsinf-server-config
+Section: misc
+Priority: optional
+Maintainer: Mathias Ertl <mati@fsinf.at>
+Standards-Version: 3.9.2
+Build-Depends: debhelper (>= 7)
+Homepage: https://git.fsinf.at/fsinf/server-config
+Vcs-Browser: https://git.fsinf.at/apt/server-config
+Vcs-Git: https://git.fsinf.at/apt/server-config.git
+
+Package: fsinf-server-config
+Architecture: all
+Depends: ${misc:Depends}
+Description: Common configuration for fsinf servers
+ This package contains some common configuration for servers maintained
+ by the Fachschaft Informatik - https://fsinf.at.
+
+Package: fsinf-server-config-startssl
+Architecture: all
+Depends: ${misc:Depends}
+Description: StartSSL intermediate certificates
+ This package installs startssl intermediate certificates
+
+Package: fsinf-server-config-apache-macros
+Architecture: all
+Depends: fsinf-server-config-startssl, libapache2-mod-macro, ${misc:Depends}
+Description: Common macros for apache2 mod_macro
+ This package contains various convenience macros for our apache configuration
