@@ -1,3 +1,9 @@
+fsinf-server-config (2012-09-14-1) precise; urgency=low
+  
+  * add create-cert.sh script
+
+ -- Mathias Ertl <mati@fsinf.at>  Fri, 14 Sep 2012 20:48:34 +0200
+
 fsinf-server-config (2012-09-10-1) precise; urgency=low
 
   * Add StartCom Root CA and certificate bundle
