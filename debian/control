@@ -3,7 +3,7 @@ Section: misc
 Priority: optional
 Maintainer: Mathias Ertl <mati@fsinf.at>
 Standards-Version: 3.9.2
-Build-Depends: debhelper (>= 7)
+Build-Depends: debhelper (>= 7.0.50~)
 Homepage: https://git.fsinf.at/fsinf/server-config
 Vcs-Browser: https://git.fsinf.at/apt/server-config
 Vcs-Git: https://git.fsinf.at/apt/server-config.git
