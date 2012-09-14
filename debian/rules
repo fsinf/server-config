@@ -2,3 +2,6 @@
 
 %:
 	dh $@
+
+override_dh_fixperms:
+	dh_fixperms -xetc/ssl/create-cert.sh
