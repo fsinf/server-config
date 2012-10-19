@@ -1,3 +1,9 @@
+fsinf-server-config (2012-10-19-1) precise; urgency=low
+
+  * new version in attempt to fix size conflict
+
+ -- Mathias Ertl <mati@fsinf.at>  Fri, 19 Oct 2012 19:06:22 +0200
+
 fsinf-server-config (2012-08-11-1) precise; urgency=low
 
   * Initial version.
