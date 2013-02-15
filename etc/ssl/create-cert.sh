@@ -3,12 +3,21 @@
 set -e
 hostname=$1
 
+if [[ -z "$hostname" ]]; then
+    echo "Usage: $0 [hostname]"
+    exit 1
+fi
+
 key=private/$hostname.key
 csr=$hostname.csr
 pem=certs/$hostname.pem
 
-mv $key $key.backup
-mv $pem $pem.backup
+if [[ -e $key ]]; then
+    mv --backup=numbered $key $key.backup
+fi
+if [[ -e $key ]]; then
+    mv --backup=numbered $pem $pem.backup
+fi
 
 
 subject="/C=AT/ST=Vienna/L=Vienna/O=Österreichische HochschülerInnenschaft/OU=Fachschaft Informatik/emailAddress=root@fsinf.at/CN=$hostname/"
