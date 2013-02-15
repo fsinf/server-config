@@ -12,10 +12,10 @@ key=private/$hostname.key
 csr=$hostname.csr
 pem=certs/$hostname.pem
 
-if [[ -e $key ]]; then
+if [[ -e "$key" ]]; then
     mv --backup=numbered $key $key.backup
 fi
-if [[ -e $key ]]; then
+if [[ -e "$key" ]]; then
     mv --backup=numbered $pem $pem.backup
 fi
 
