@@ -1,6 +1,7 @@
 fsinf-server-config (2013-02-15-1) precise; urgency=low
 
   * More safeguards for /etc/ssl/create-cert.sh
+  * Override dh_autobuild to do nothing
 
  -- Mathias Ertl <mati@fsinf.at>  Fri, 15 Feb 2013 13:11:17 +0100
 
