@@ -1,0 +1,17 @@
+fsinf-server-config (2012-11-09-1) precise; urgency=low
+
+  * Set HSTS header in ssl config macro
+
+ -- Mathias Ertl <mati@fsinf.at>  Fri, 09 Nov 2012 19:49:58 +0100
+
+fsinf-server-config (2012-10-19-2) precise; urgency=low
+
+  * new version in attempt to fix size conflict
+
+ -- Mathias Ertl <mati@fsinf.at>  Fri, 19 Oct 2012 19:06:22 +0200
+
+fsinf-server-config (2012-08-11-1) precise; urgency=low
+
+  * Initial version.
+
+ -- Mathias Ertl <mati@fsinf.at>  Sat, 11 Aug 2012 11:47:15 +0200
