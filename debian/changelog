@@ -1,3 +1,9 @@
+fsinf-server-config (2013-02-15-1) precise; urgency=low
+
+  * Add a few safety checks to /etc/ssl/create-cert.sh
+
+ -- Mathias Ertl <mati@fsinf.at>  Fri, 15 Feb 2013 12:41:16 +0100
+
 fsinf-server-config (2012-11-09-1) precise; urgency=low
 
   * Set HSTS header in ssl config macro
