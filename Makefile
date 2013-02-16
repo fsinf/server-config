@@ -4,3 +4,4 @@ push-upstream:
 push-origin:
 	git push --tags origin master
 	git push --tags origin upstream
+	git push --tags origin pristine-tar
