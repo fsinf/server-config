@@ -1,3 +1,9 @@
+fsinf-server-config (2013-02-16-1) precise; urgency=low
+
+  * In fsinf-create-cert, chdir to /etc/ssl
+
+ -- Mathias Ertl <mati@fsinf.at>  Sat, 16 Feb 2013 14:22:37 +0100
+
 fsinf-server-config (2013-02-15-1) precise; urgency=low
 
   * Move /etc/ssl/create-cert.sh to /usr/bin/fsinf-create-cert
