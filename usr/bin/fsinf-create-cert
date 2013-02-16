@@ -8,6 +8,9 @@ if [[ -z "$hostname" ]]; then
     exit 1
 fi
 
+# chdir to basedir
+cd /etc/ssl
+
 key=private/$hostname.key
 csr=$hostname.csr
 pem=certs/$hostname.pem
