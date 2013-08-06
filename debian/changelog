@@ -1,3 +1,9 @@
+fsinf-server-config (2013-08-06-1) precise; urgency=low
+
+  * New upstream version.
+
+ -- Mathias Ertl <mati@fsinf.at>  Tue, 06 Aug 2013 13:25:19 +0200
+
 fsinf-server-config (2013-02-16-1) precise; urgency=low
 
   * In fsinf-create-cert, chdir to /etc/ssl

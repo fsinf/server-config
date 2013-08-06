@@ -1,3 +1,11 @@
+fsinf-server-config (2013-08-06-1) precise; urgency=low
+
+  * sysctl-config now has .conf suffix, so its actually used.
+  * Set accept_ra_pinfo, ccept_ra_rtr_pref, dad_transmits and
+    router_solicitations to "0".
+
+ -- Mathias Ertl <mati@fsinf.at>  Tue, 06 Aug 2013 13:25:19 +0200
+
 fsinf-server-config (2013-02-16-1) precise; urgency=low
 
   * Initial version described in this changelog.
