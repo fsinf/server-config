@@ -3,6 +3,6 @@
 set -e
 
 # this should reload all sysctl rules, according to /etc/sysctl.d/README:
-invoke-rc.d procps starts
+invoke-rc.d procps start
 
 #DEBHELPER#
