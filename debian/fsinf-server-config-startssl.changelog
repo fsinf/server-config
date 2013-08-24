@@ -4,6 +4,8 @@ fsinf-server-config (2013-02-16-1) precise; urgency=low
     recommendations in debian/README.Debian in the ca-certificates package.
   * Add Class 3 server certificate.
   * Add Class 4/Extended Validation server certificate.
+  * Remove the unused "Server Certificate Bundle with CRLs".
+  * Call update-ca-certificates in the packages postinst script.
 
  -- Mathias Ertl <mati@fsinf.at>  Sat, 16 Feb 2013 14:22:37 +0100
 
