@@ -1,3 +1,9 @@
+fsinf-server-config (2013-08-24+1-1) precise; urgency=low
+
+  * New upstream version.
+
+ -- Mathias Ertl <mati@fsinf.at>  Sat, 24 Aug 2013 16:32:05 +0200
+
 fsinf-server-config (2013-08-24-1) precise; urgency=low
 
   * New upstream source version.
