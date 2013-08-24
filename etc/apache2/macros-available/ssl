@@ -4,7 +4,7 @@
 
 	SSLCertificateFile /etc/ssl/certs/$hostname.pem
 	SSLCertificateKeyFile /etc/ssl/private/$hostname.key
-	SSLCertificateChainFile /etc/ssl/certs/StartCom_Certification_Authority_Class$class.pem
+	SSLCertificateChainFile /etc/ssl/certs/StartCom_Certification_Authority_$class.pem
 	SSLCACertificateFile /etc/ssl/certs/StartCom_Certification_Authority.pem
 
 	SetEnvIf User-Agent ".*MSIE.*" nokeepalive ssl-unclean-shutdown
