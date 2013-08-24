@@ -2,6 +2,8 @@ fsinf-server-config (2013-08-24-1) precise; urgency=low
 
   * New upstream source version.
   * Override dh_usrlocal with a noop.
+  * Add lintian-overrides for /usr/local/ files of
+    fsinf-server-config-startssl.
 
  -- Mathias Ertl <mati@fsinf.at>  Sat, 24 Aug 2013 14:56:33 +0200
 

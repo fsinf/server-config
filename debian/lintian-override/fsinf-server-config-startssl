@@ -1,0 +1,10 @@
+fsinf-server-config-startssl: dir-in-usr-local usr/local/share/
+fsinf-server-config-startssl: dir-in-usr-local usr/local/share/ca-certificates/
+fsinf-server-config-startssl: file-in-usr-local usr/local/share/ca-certificates/StartCom_Certification_Authority_Class1.crt
+fsinf-server-config-startssl: file-in-unusual-dir usr/local/share/ca-certificates/StartCom_Certification_Authority_Class1.crt
+fsinf-server-config-startssl: file-in-usr-local usr/local/share/ca-certificates/StartCom_Certification_Authority_Class2.crt
+fsinf-server-config-startssl: file-in-unusual-dir usr/local/share/ca-certificates/StartCom_Certification_Authority_Class2.crt
+fsinf-server-config-startssl: file-in-usr-local usr/local/share/ca-certificates/StartCom_Certification_Authority_Class3.crt
+fsinf-server-config-startssl: file-in-unusual-dir usr/local/share/ca-certificates/StartCom_Certification_Authority_Class3.crt
+fsinf-server-config-startssl: file-in-usr-local usr/local/share/ca-certificates/StartCom_Certification_Authority_Class4.crt
+fsinf-server-config-startssl: file-in-unusual-dir usr/local/share/ca-certificates/StartCom_Certification_Authority_Class4.crt
