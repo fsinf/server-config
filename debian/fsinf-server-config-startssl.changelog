@@ -1,4 +1,4 @@
-fsinf-server-config (2013-02-16-1) precise; urgency=low
+fsinf-server-config (2013-08-24-1) precise; urgency=low
 
   * Move certificates to /usr/local/share/ca-certificates based on
     recommendations in debian/README.Debian in the ca-certificates package.
@@ -7,7 +7,7 @@ fsinf-server-config (2013-02-16-1) precise; urgency=low
   * Remove the unused "Server Certificate Bundle with CRLs".
   * Call update-ca-certificates in the packages postinst script.
 
- -- Mathias Ertl <mati@fsinf.at>  Sat, 16 Feb 2013 14:22:37 +0100
+ -- Mathias Ertl <mati@fsinf.at>  Sat, 24 Aug 2013 14:56:33 +0200
 
 fsinf-server-config (2013-02-16-1) precise; urgency=low
 
