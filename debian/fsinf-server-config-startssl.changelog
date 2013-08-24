@@ -1,3 +1,9 @@
+fsinf-server-config (2013-08-24+4-1) precise; urgency=low
+  
+  * Add Server Certificate Bundle with CRLs.
+
+ -- Mathias Ertl <mati@fsinf.at>  Sat, 24 Aug 2013 22:54:49 +0200
+
 fsinf-server-config (2013-08-24+2-1) precise; urgency=low
   
   * Adjust to new paths for ssl certificates.
