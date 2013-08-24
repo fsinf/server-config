@@ -1,3 +1,10 @@
+fsinf-server-config (2013-08-24+2-1) precise; urgency=low
+  
+  * Adjust to new paths for ssl certificates.
+  * Test for correct file when checking if certificates already exist.
+
+ -- Mathias Ertl <mati@fsinf.at>  Sat, 24 Aug 2013 16:45:06 +0200
+
 fsinf-server-config (2013-08-24-1) precise; urgency=low
 
   * Move certificates to /usr/local/share/ca-certificates based on
