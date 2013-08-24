@@ -2,7 +2,7 @@
 	SSLEngine on
 	SSLProtocol all -SSLv2
 
-	SSLCertificateFile /etc/ssl/certs/$hostname.pem
+	SSLCertificateFile /etc/ssl/public/$hostname.pem
 	SSLCertificateKeyFile /etc/ssl/private/$hostname.key
 	SSLCertificateChainFile /etc/ssl/certs/StartCom_Certification_Authority_$class.pem
 	SSLCACertificateFile /etc/ssl/certs/StartCom_Certification_Authority.pem

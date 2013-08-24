@@ -13,7 +13,7 @@ cd /etc/ssl
 
 key=private/$hostname.key
 csr=$hostname.csr
-pem=certs/$hostname.pem
+pem=public/$hostname.pem
 
 if [[ -e "$key" ]]; then
     mv --backup=numbered $key $key.backup
