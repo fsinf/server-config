@@ -6,6 +6,13 @@ set -e
 
 case "$1" in
     configure|reconfigure)
+        # remove old certificates, if they exist:
+        # (not automatically removed, because they are in /etc/!)
+        rm -f /etc/ssl/certs/startssl-ca-bundle.pem
+        rm -f /etc/ssl/certs/startssl-ca.pem
+        rm -f /etc/ssl/certs/sub.class1.server.ca.pem
+        rm -f /etc/ssl/certs/sub.class2.server.ca.pem
+
         update-ca-certificates
         ;;
     *) 
