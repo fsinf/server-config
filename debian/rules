@@ -5,5 +5,7 @@
 
 override_dh_auto_build:
 
+override_dh_usrlocal:
+
 override_dh_fixperms:
 	dh_fixperms -Xetc/ssl/create-cert.sh
