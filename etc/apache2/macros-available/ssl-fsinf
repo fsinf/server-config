@@ -1,0 +1,12 @@
+<Macro ssl-fsinf $hostname>
+	SSLEngine on
+	SSLProtocol all -SSLv2
+
+    SSLCertificateFile /etc/ssl/public/$hostname.pem
+    SSLCertificateKeyFile /etc/ssl/private/$hostname.key
+    SSLCACertificateFile /etc/ssl/certs/fsinf_at.pem
+
+	SetEnvIf User-Agent ".*MSIE.*" nokeepalive ssl-unclean-shutdown
+
+    Header set Strict-Transport-Security "max-age=16070400; includeSubDomains"
+</Macro>
