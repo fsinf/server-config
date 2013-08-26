@@ -1,3 +1,10 @@
+fsinf-server-config (2013-08-26-1) precise; urgency=low
+  
+  * Add awstats macro.
+  * Consistently use spaces instead of tabs.
+
+ -- Mathias Ertl <mati@fsinf.at>  Mon, 26 Aug 2013 16:53:26 +0200
+
 fsinf-server-config (2013-08-24+3-1) precise; urgency=low
   
   * Add ssl-fsinf macro.
