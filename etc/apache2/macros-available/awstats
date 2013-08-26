@@ -1,0 +1,41 @@
+<Macro awstats $host $service $password $group>
+	RewriteEngine On
+	RewriteRule ^/awstats-icon(.*) /usr/share/awstats/icon$1 [L]
+	RewriteRule ^/awstats /usr/lib/cgi-bin/awstats.pl [L]
+
+	<Directory /usr/lib/cgi-bin>
+		<Files awstats.pl>
+			SetHandler cgi-script
+			Options +ExecCGI -MultiViews -FollowSymLinks
+			Order allow,deny
+			Allow from all
+			Require valid-user
+
+			AuthType Basic
+			AuthName "awstats statistics"
+			AuthBasicProvider restauth
+			RestAuthAddress $host
+			RestAuthServiceUser $service
+			RestAuthServicePassword $password
+			RestAuthCacheAddress localhost:11211
+			RestAuthCacheExpiry 3600
+			require restauth-group $group
+		</Files>
+	</Directory>
+
+	# allow access to icons for awstat:
+	<Directory /usr/share/awstats/icon>
+		Options None
+		AllowOverride None
+		Order allow,deny
+		Allow from all
+	</Directory>
+
+	# block direct web-access to awstats databases:
+	<Directory /var/lib/awstats>
+		Options None
+		AllowOverride None
+		Order allow,deny
+		Allow from None
+	</Directory>
+</Macro>

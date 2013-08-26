@@ -1,8 +1,8 @@
 <Macro mediawiki $host>
 	<Directory "/var/www/$host/">
 		<Files "wiki">
-        	        ForceType application/x-httpd-php
-                	Allow from all
-	        </Files>
+			ForceType application/x-httpd-php
+			Allow from all
+		</Files>
 	</Directory>
 </Macro>
