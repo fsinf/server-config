@@ -9,5 +9,5 @@
 
 	SetEnvIf User-Agent ".*MSIE.*" nokeepalive ssl-unclean-shutdown
 
-    Header set Strict-Transport-Security "max-age=16070400; includeSubDomains"
+	Header set Strict-Transport-Security "max-age=16070400; includeSubDomains"
 </Macro>
