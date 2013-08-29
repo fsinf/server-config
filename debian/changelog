@@ -1,6 +1,7 @@
 fsinf-server-config (2013-08-26-1) precise; urgency=low
   
   * New upstream version.
+  * Remove outdated dh_fixperms override in debian/rules.
 
  -- Mathias Ertl <mati@fsinf.at>  Mon, 26 Aug 2013 16:53:26 +0200
 
