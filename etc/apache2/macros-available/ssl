@@ -1,13 +1,19 @@
 <Macro ssl $hostname $class>
-	SSLEngine on
-	SSLProtocol all -SSLv2
+    SSLEngine on
+    SSLProtocol all -SSLv2 -SSLv3
+    SSLHonorCipherOrder On
+    SSLCompression off
 
-	SSLCertificateFile /etc/ssl/public/$hostname.pem
-	SSLCertificateKeyFile /etc/ssl/private/$hostname.key
-	SSLCertificateChainFile /etc/ssl/certs/StartCom_Certification_Authority_$class.pem
-	SSLCACertificateFile /etc/ssl/certs/StartCom_Certification_Authority.pem
+    SSLCertificateFile /etc/ssl/public/$hostname.pem
+    SSLCertificateKeyFile /etc/ssl/private/$hostname.key
+    SSLCertificateChainFile /etc/ssl/certs/StartCom_Certification_Authority_$class.pem
+    SSLCACertificateFile /etc/ssl/certs/StartCom_Certification_Authority.pem
 
-	SetEnvIf User-Agent ".*MSIE.*" nokeepalive ssl-unclean-shutdown
+    # From the Applied Crypto Hardening guite, 2014-01-01
+    # see: https://bettercrypto.org/static/applied-crypto-hardening.pdf
+    SSLCipherSuite 'EDH+CAMELLIA:EDH+aRSA:EECDH+aRSA+AESGCM:EECDH+aRSA+SHA384:EECDH+aRSA+SHA256:EECDH:+CAMELLIA256:+AES256:+CAMELLIA128:+AES128:+SSLv3:!aNULL:!eNULL:!LOW:!3DES:!MD5:!EXP:!PSK:!SRP:!DSS:!RC4:!SEED:!ECDSA:CAMELLIA256-SHA:AES256-SHA:CAMELLIA128-SHA:AES128-SHA'
 
-	Header set Strict-Transport-Security "max-age=16070400; includeSubDomains"
+    SetEnvIf User-Agent ".*MSIE.*" nokeepalive ssl-unclean-shutdown
+
+    Header set Strict-Transport-Security "max-age=16070400; includeSubDomains"
 </Macro>
