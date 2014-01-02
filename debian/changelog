@@ -1,6 +1,7 @@
 fsinf-server-config (2014-01-02-1) unstable; urgency=low
 
   * New upstream version
+  * Increase debhelper dependency >= 9.
 
  -- Mathias Ertl <mati@fsinf.at>  Thu, 02 Jan 2014 00:26:17 +0100
 
