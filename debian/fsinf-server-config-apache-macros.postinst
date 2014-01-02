@@ -8,8 +8,7 @@ CERTDIR=/etc/ssl/public/
 
 case "$1" in
     configure|reconfigure)
-        # move existing certificates to new location:
-        find /etc/ssl/certs '(' -name *pem -o -name *pem.backup* ')' -type f '!' -name ssl-cert-snakeoil.pem -exec mv -v {} ${CERTDIR} ';'
+        a2enmod macro
         ;;
     *) 
         ;;
