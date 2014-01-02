@@ -1,6 +1,8 @@
 fsinf-server-config (2014-01-01-1) precise; urgency=low
 
   * Update/Secure SSL configuration.
+  * No longer move certificates to new location.
+  * enable macro module in postinst, but do not restart apache.
 
  -- Mathias Ertl <mati@fsinf.at>  Thu, 02 Jan 2014 08:26:17 +0100
 
