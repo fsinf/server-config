@@ -9,15 +9,7 @@ CERTDIR=/etc/ssl/public/
 case "$1" in
     configure|reconfigure)
 
-        # enable configuration in apache 2.4:
-        # (see https://wiki.debian.org/Apache2Transition)
-        if [ -e /usr/share/apache2/apache2-maintscript-helper ] ; then
-            . /usr/share/apache2/apache2-maintscript-helper
-            apache2_invoke enconf fsinf-server-config-apache-macros.conf
-            apache2_invoke enmod macro
-        else
-            a2enmod macro
-        fi
+        a2enmod macro
         ;;
     *) 
         ;;
