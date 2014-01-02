@@ -1,7 +1,7 @@
 Source: fsinf-server-config
 Section: misc
 Priority: optional
-Maintainer: Mathias Ertl <mati@fsinf.at>
+Maintainer: Mathias Ertl <apt-repository@fsinf.at>
 Standards-Version: 3.9.2
 Build-Depends: debhelper (>= 9)
 Homepage: https://git.fsinf.at/fsinf/server-config
