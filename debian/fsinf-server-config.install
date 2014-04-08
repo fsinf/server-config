@@ -1,2 +1,3 @@
 etc/apt/
 etc/sysctl.d
+usr/bin/apt-update
