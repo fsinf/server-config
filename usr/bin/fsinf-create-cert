@@ -27,7 +27,7 @@ subject="/C=AT/ST=Vienna/L=Vienna/O=Österreichische HochschülerInnenschaft/OU=
 
 # generate private key
 openssl genrsa -out $key 4096 > /dev/null 2> /dev/null
-openssl req -new -key $key -out $csr -utf8 -batch -subj "$subject" > /dev/null
+openssl req -new -key $key -out $csr -utf8 -batch -sha256 -subj "$subject" > /dev/null
 cat $csr
 
 read
