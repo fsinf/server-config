@@ -1,4 +1,4 @@
-fsinf-server-config (1:2014.06.28) unstable; urgency=low
+fsinf-server-config (1:2014.06.28.1) unstable; urgency=low
 
   * CSR requests are now signed with sha256.
   * Switch to new versioning scheme that and a Debian native package.
