@@ -1,3 +1,10 @@
+fsinf-server-config (1:2014.06.28) unstable; urgency=low
+
+  * CSR requests are now signed with sha256.
+  * Switch to new versioning scheme that and a Debian native package.
+
+ -- Mathias Ertl <mati@fsinf.at>  Sat, 28 Jun 2014 00:28:41 +0200
+
 fsinf-server-config (2014-04-08-1) unstable; urgency=low
 
   * Change maintainer address to mati@fsinf.at.
