@@ -1,3 +1,9 @@
+fsinf-server-config (1:2014.09.04.1) unstable; urgency=low
+
+  * Rename apt-update to faster apt-up.
+
+ -- Mathias Ertl <mati@fsinf.at>  Thu, 04 Sep 2014 13:06:15 +0200
+
 fsinf-server-config (1:2014.06.28.1) unstable; urgency=low
 
   * CSR requests are now signed with sha256.
