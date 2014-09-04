@@ -2,6 +2,8 @@ fsinf-server-config (1:2014.09.04.1) unstable; urgency=low
 
   * Rename apt-update to faster apt-up.
   * Add git-buildpackage config so we no longer need a fake upstream branch.
+  * fsinf-create-cert now uses the RESTART env variable to disable restarts
+  * fsinf-create-cert now prints checksums when finished.
 
  -- Mathias Ertl <mati@fsinf.at>  Thu, 04 Sep 2014 13:06:15 +0200
 

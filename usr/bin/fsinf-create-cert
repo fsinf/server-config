@@ -2,6 +2,7 @@
 
 set -e
 hostname=$1
+RESTART=${RESTART:-y}
 
 if [[ -z "$hostname" ]]; then
     echo "Usage: $0 [hostname]"
@@ -36,4 +37,11 @@ vim $pem
 
 rm $csr
 
-apache2ctl -t && /etc/init.d/apache2 restart
+if [[ $RESTART == "y" ]]; then
+    apache2ctl -t && /etc/init.d/apache2 restart
+fi
+
+openssl x509 -noout -in $pm -fingerprint -md5
+openssl x509 -noout -in $pm -fingerprint -sha1
+openssl x509 -noout -in $pm -fingerprint -sha256
+openssl x509 -noout -in $pm -fingerprint -sha512
