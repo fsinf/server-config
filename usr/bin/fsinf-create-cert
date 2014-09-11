@@ -23,15 +23,20 @@ if [[ -e "$pem" ]]; then
     mv --backup=numbered $pem $pem.backup
 fi
 
+# set umask
+umask 0027
 
 subject="/C=AT/ST=Vienna/L=Vienna/O=Österreichische HochschülerInnenschaft/OU=Fachschaft Informatik/emailAddress=root@fsinf.at/CN=$hostname/"
 
 # generate private key
-openssl genrsa -out $key 4096 > /dev/null 2> /dev/null
-openssl req -new -key $key -out $csr -utf8 -batch -sha256 -subj "$subject" > /dev/null
+sg ssl-cert -c "openssl genrsa -out $key 4096" > /dev/null 2> /dev/null
+sg ssl-cert -c "openssl req -new -key $key -out $csr -utf8 -batch -sha256 -subj '$subject'" > /dev/null
 cat $csr
 
 read
+
+# set umask to world-readable again (.pem are not secret)
+umask 0022
 
 vim $pem
 
@@ -41,7 +46,7 @@ if [[ $RESTART == "y" ]]; then
     apache2ctl -t && /etc/init.d/apache2 restart
 fi
 
-openssl x509 -noout -in $pm -fingerprint -md5
-openssl x509 -noout -in $pm -fingerprint -sha1
-openssl x509 -noout -in $pm -fingerprint -sha256
-openssl x509 -noout -in $pm -fingerprint -sha512
+openssl x509 -noout -in $pem -fingerprint -md5
+openssl x509 -noout -in $pem -fingerprint -sha1
+openssl x509 -noout -in $pem -fingerprint -sha256
+openssl x509 -noout -in $pem -fingerprint -sha512
