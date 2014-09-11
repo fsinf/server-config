@@ -41,7 +41,7 @@ if [[ $RESTART == "y" ]]; then
     apache2ctl -t && /etc/init.d/apache2 restart
 fi
 
-openssl x509 -noout -in $pm -fingerprint -md5
-openssl x509 -noout -in $pm -fingerprint -sha1
-openssl x509 -noout -in $pm -fingerprint -sha256
-openssl x509 -noout -in $pm -fingerprint -sha512
+openssl x509 -noout -in $pem -fingerprint -md5
+openssl x509 -noout -in $pem -fingerprint -sha1
+openssl x509 -noout -in $pem -fingerprint -sha256
+openssl x509 -noout -in $pem -fingerprint -sha512
