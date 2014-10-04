@@ -2,6 +2,7 @@
 	ServerAdmin webmaster@$hostname
 	ServerName $hostname
 	ServerAlias www.$hostname
+	ServerSignature Off
 	DocumentRoot /var/www/$hostname
 
 	<Directory />

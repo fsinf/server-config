@@ -1,3 +1,9 @@
+fsinf-server-config (1:2014.10.04.2) unstable; urgency=low
+
+  * Set ServerSignature in basic macro
+
+ -- Mathias Ertl <mati@fsinf.at>  Sat, 04 Oct 2014 19:05:33 +0200
+
 fsinf-server-config (1:2014.10.04.1) unstable; urgency=low
 
   * Add ServerTokens ServerSignature directives.
