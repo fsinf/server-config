@@ -1,6 +1,7 @@
 fsinf-server-config (1:2014.10.04.1) unstable; urgency=low
 
   * Add ServerTokens ServerSignature directives.
+  * Update Standards-Version.
 
  -- Mathias Ertl <mati@fsinf.at>  Sat, 04 Oct 2014 17:27:23 +0200
 
