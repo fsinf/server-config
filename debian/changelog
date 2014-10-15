@@ -1,3 +1,9 @@
+fsinf-server-config (1:2014.10.15.2) unstable; urgency=low
+
+  * Update to StartSSL certificates with sha256 signatures.
+
+ -- Mathias Ertl <mati@fsinf.at>  Wed Oct 15 23:12:51 CEST 2014
+
 fsinf-server-config (1:2014.10.04.2) unstable; urgency=low
 
   * Set ServerSignature in basic macro
