@@ -1,6 +1,6 @@
 <Macro ssl-fsinf $hostname>
 	SSLEngine on
-	SSLProtocol all -SSLv2
+	SSLProtocol all -SSLv2 -SSLv3
 
 	SSLCertificateFile /etc/ssl/public/$hostname.pem
 	SSLCertificateKeyFile /etc/ssl/private/$hostname.key
