@@ -5,6 +5,7 @@ fsinf-server-config (1:2014.12.30.1) unstable; urgency=low
   * Apache now uses a cipher suite that allows only 256 bit ciphers with PFS.
   * Update ssl-fsinf macro to disable SSL compression and include cipher
     suite.
+  * drupal macro: Remove redundant Directory directive.
 
  -- Mathias Ertl <mati@fsinf.at>  Tue, 30 Dec 2014 11:20:20 +0100
 

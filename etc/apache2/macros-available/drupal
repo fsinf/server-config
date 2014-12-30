@@ -1,9 +1,5 @@
 <Macro drupal $hostname>
 	<Directory /var/www/$hostname>
-		AllowOverride all
-	</Directory>
-
-	<Directory /var/www/$hostname>
 		AllowOverride All
 	</Directory>
 
