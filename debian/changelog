@@ -1,3 +1,10 @@
+fsinf-server-config (1:2014.12.30.1) unstable; urgency=low
+
+  * The default branch now uses apache2.4 configuration. Older configuration
+    for apache2.2 is now in the "apache22" branch".
+
+ -- Mathias Ertl <mati@fsinf.at>  Tue, 30 Dec 2014 11:20:20 +0100
+
 fsinf-server-config (1:2014.10.15.2) unstable; urgency=low
 
   * Update to StartSSL certificates with sha256 signatures.
