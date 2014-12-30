@@ -5,8 +5,8 @@
 
 	Alias /files /var/www/$hostname/sites/$hostname/files/
 	<Directory /var/www/$hostname/sites/$hostname/files/>
-		Options -all FollowSymLinks
-		allow from all
+		Options None
+		Allow from all
 		AllowOverride None
 	</Directory>
 </Macro>
