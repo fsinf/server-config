@@ -8,8 +8,12 @@ CERTDIR=/etc/ssl/public/
 
 case "$1" in
     configure|reconfigure)
-
-        a2enmod macro
+        if [ -e /usr/share/apache2/apache2-maintscript-helper ] ; then
+            . /usr/share/apache2/apache2-maintscript-helper
+            apache2_invoke enmod macro
+            apache2_invoke enconf fsinf-server-config-apache-macros.conf
+            apache2_invoke enconf fsinf-server-config.conf
+        fi
         ;;
     *) 
         ;;
