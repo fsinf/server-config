@@ -8,6 +8,8 @@ fsinf-server-config (1:2015.01.01.1) unstable; urgency=low
   * drupal macro: 
     * Remove redundant Directory directive.
     * Allow .htaccess files in the files directory.
+  * Apt now remount /tmp with exec, allowing systems to mount /tmp with
+    noexec.
 
  -- Mathias Ertl <mati@fsinf.at>  Thu, 01 Jan 2015 16:52:54 +0100
 
