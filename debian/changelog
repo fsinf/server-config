@@ -1,6 +1,7 @@
 fsinf-server-config (1:2015.01.01.2) unstable; urgency=low
 
   * Also exclude NULL ciphers.
+  * Enable OCSP stapling and the SSL session cache (Apache 2.4 only).
   
  -- Mathias Ertl <mati@fsinf.at>  Thu, 01 Jan 2015 18:21:21 +0100
 
