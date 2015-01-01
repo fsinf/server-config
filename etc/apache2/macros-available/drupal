@@ -1,16 +1,12 @@
 <Macro drupal $hostname>
 	<Directory /var/www/$hostname>
-		AllowOverride all
-	</Directory>
-
-	<Directory /var/www/$hostname>
 		AllowOverride All
 	</Directory>
 
 	Alias /files /var/www/$hostname/sites/$hostname/files/
 	<Directory /var/www/$hostname/sites/$hostname/files/>
-		Options -all FollowSymLinks
-		allow from all
+		Options None
+		Allow from all
 		AllowOverride None
 	</Directory>
 </Macro>
