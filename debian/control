@@ -23,6 +23,14 @@ Description: StartSSL intermediate certificates
 
 Package: fsinf-server-config-apache-macros
 Architecture: all
+Depends: fsinf-server-config-apache
+Description: transitional dummy package
+ This is a transitional dummy package. It can safely be removed.
+
+Package: fsinf-server-config-apache
+Architecture: all
 Depends: fsinf-server-config-startssl (>= 2013-08-24), libapache2-mod-macro, ${misc:Depends}
-Description: Common macros for apache2 mod_macro
- This package contains various convenience macros for our apache configuration
+Replaces: fsinf-server-config-apache-macros
+Breaks: fsinf-server-config-apache-macros
+Description: Common Apache configuration
+ This package provides common Apache configuration used by all our servers.
