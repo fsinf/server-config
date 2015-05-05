@@ -1,5 +1,6 @@
 <Macro mediawiki $host>
 	<Directory "/var/www/$host/">
+		Options -Indexes
 		<Files "wiki">
 			ForceType application/x-httpd-php
 			Allow from all
