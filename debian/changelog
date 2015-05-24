@@ -1,5 +1,12 @@
 fsinf-server-config (1:2015.05.02.1) unstable; urgency=low
 
+  * Remove the apache configuration, which now resides in its own source
+    package.
+  
+ -- Mathias Ertl <mati@fsinf.at>  Mon, 25 May 2015 01:09:28 +0200
+
+fsinf-server-config (1:2015.05.02.1) unstable; urgency=low
+
   * Rename fsinf-server-config-apache-macros to fsinf-server-config-apache.
   * Add liblwp-useragent-determined-perl as dependency for 
     fsinf-server-config-apache, is used for munin apache graphs.
