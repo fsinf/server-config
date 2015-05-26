@@ -2,6 +2,8 @@ fsinf-server-config (1:2015.05.26.1) unstable; urgency=low
 
   * Update StartSSL certificate bundle.
   * No longer include apache macros, now in separate source package.
+  * Strip O, OU and emailAddress parts from certificate requests, StartSSL
+    keeps complaining about those.
   
  -- Mathias Ertl <mati@fsinf.at>  Mon, 25 May 2015 01:09:28 +0200
 
