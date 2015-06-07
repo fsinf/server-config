@@ -1,7 +1,6 @@
 #!/bin/sh
 
 set -e
-CERTDIR=/etc/ssl/public
 
 #DEBHELPER#
 
