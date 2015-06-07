@@ -1,7 +1,7 @@
 fsinf-server-config (1:2015.06.07.1) unstable; urgency=low
 
   * Add LetsEncrypt certificates in the ca-certificates-letsencrypt package.
-
+  * Remove old cleanup logic in startssl packages.
   
  -- Mathias Ertl <mati@fsinf.at>  Sun, 07 Jun 2015 12:25:34 +0200
 

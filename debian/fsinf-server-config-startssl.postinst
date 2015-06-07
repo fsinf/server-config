@@ -7,16 +7,6 @@ CERTDIR=/etc/ssl/public
 
 case "$1" in
     configure|reconfigure)
-        # Remove old certificates, if they exist:
-        # (not automatically removed, because they are in /etc/!)
-        rm -f /etc/ssl/certs/startssl-ca-bundle.pem
-        rm -f /etc/ssl/certs/startssl-ca.pem
-        rm -f /etc/ssl/certs/sub.class1.server.ca.pem
-        rm -f /etc/ssl/certs/sub.class2.server.ca.pem
-
-        # Move certificates to new, unambiguous location:
-        find /etc/ssl/certs '(' -name *pem -o -name *pem.backup ')' -type f '!' -name ssl-cert-snakeoil.pem -exec mv -v {} ${CERTDIR} ';'
-
         update-ca-certificates
         ;;
     *) 
