@@ -1,2 +1,2 @@
-usr/local/share/ca-certificates/StartCom*
+usr/local/share/ca-certificates/
 usr/bin/fsinf-create-cert
