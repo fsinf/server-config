@@ -17,7 +17,7 @@ Description: Common configuration for fsinf servers
 
 Package: fsinf-server-config-startssl
 Architecture: all
-Depends: ${misc:Depends}
+Depends: ssl-cert, ${misc:Depends}
 Description: StartSSL intermediate certificates
  This package installs startssl intermediate certificates
 
