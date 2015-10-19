@@ -10,7 +10,8 @@ Vcs-Git: https://git.fsinf.at/apt/server-config.git
 
 Package: fsinf-server-config
 Architecture: all
-Depends: ${misc:Depends}, apt-transport-https, ca-certificates-fsinf
+Depends: ${misc:Depends}, apt-transport-https, ca-certificates-fsinf,
+ libnet-ssleay-perl
 Description: Common configuration for fsinf servers
  This package contains some common configuration for servers maintained
  by the Fachschaft Informatik - https://fsinf.at.

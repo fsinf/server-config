@@ -1,5 +1,11 @@
 fsinf-server-config (1:2015.08.16.1) unstable; urgency=low
 
+  * Depend on libnet-ssleay-perl, which is required for munin via TLS.
+
+ -- Mathias Ertl <mati@fsinf.at>  Mon, 19 Oct 2015 22:28:45 +0200
+
+fsinf-server-config (1:2015.08.16.1) unstable; urgency=low
+
   * Depend on apt-transport-https and ca-certificates-fsinf.
 
  -- Mathias Ertl <mati@fsinf.at>  Sun, 16 Aug 2015 19:21:11 +0200
