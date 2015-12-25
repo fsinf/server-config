@@ -2,6 +2,7 @@ fsinf-server-config (1:2015.12.25.1) unstable; urgency=low
 
   * Depend on ca-certificates-letsencrypt to trust letsencrypt packages
     directly.
+  * Include letsencrypt config file to generate 4096 bit RSA keys.
 
  -- Mathias Ertl <mati@fsinf.at>  Mon, 19 Oct 2015 22:28:45 +0200
 

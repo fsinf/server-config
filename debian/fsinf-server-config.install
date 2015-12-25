@@ -1,4 +1,5 @@
 etc/apt/
 etc/sysctl.d
 etc/systemd
+etc/letsencrypt
 usr/bin/apt-up
