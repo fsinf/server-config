@@ -4,7 +4,7 @@ fsinf-server-config (1:2015.12.25.1) unstable; urgency=low
     directly.
   * Include letsencrypt config file to generate 4096 bit RSA keys.
 
- -- Mathias Ertl <mati@fsinf.at>  Mon, 19 Oct 2015 22:28:45 +0200
+ -- Mathias Ertl <mati@fsinf.at>  Fri, 25 Dec 2015 15:17:56 +0100
 
 fsinf-server-config (1:2015.08.16.1) unstable; urgency=low
 
