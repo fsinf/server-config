@@ -1,3 +1,10 @@
+fsinf-server-config (1:2015.12.25.1) unstable; urgency=low
+
+  * Depend on ca-certificates-letsencrypt to trust letsencrypt packages
+    directly.
+
+ -- Mathias Ertl <mati@fsinf.at>  Mon, 19 Oct 2015 22:28:45 +0200
+
 fsinf-server-config (1:2015.08.16.1) unstable; urgency=low
 
   * Depend on libnet-ssleay-perl, which is required for munin via TLS.
