@@ -1,3 +1,9 @@
+fsinf-server-config (1:2016.01.08.1) unstable; urgency=low
+
+  * Add mysql client configuration so mysql connections use SSL automatically.
+
+ -- Mathias Ertl <mati@fsinf.at>  Fri, 25 Dec 2015 15:17:56 +0100
+
 fsinf-server-config (1:2015.12.25.1) unstable; urgency=low
 
   * Depend on ca-certificates-letsencrypt to trust letsencrypt packages

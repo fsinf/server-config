@@ -1,4 +1,5 @@
 etc/apt/
+etc/mysql
 etc/sysctl.d
 etc/systemd
 etc/letsencrypt

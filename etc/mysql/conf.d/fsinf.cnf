@@ -1,0 +1,2 @@
+[mysql]
+ssl-ca=/etc/ssl/certs/fsinf_at.pem
