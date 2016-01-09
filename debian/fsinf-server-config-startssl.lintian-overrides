@@ -11,3 +11,5 @@ file-in-unusual-dir usr/local/share/ca-certificates/StartCom_Certification_Autho
 file-in-usr-local usr/local/share/ca-certificates/StartCom_Certification_Authority_Bundle.crt
 file-in-unusual-dir usr/local/share/ca-certificates/StartCom_Certification_Authority_Bundle.crt
 file-in-unusual-dir usr/local/share/ca-certificates/StartCom_Certification_Authority_class2_IV.crt
+file-in-usr-local usr/local/share/ca-certificates/StartCom_Certification_Authority_class2_IV.crt
+binary-without-manpage usr/bin/fsinf-create-cert
