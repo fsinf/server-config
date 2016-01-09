@@ -1,7 +1,7 @@
 Format: http://anonscm.debian.org/viewvc/dep/web/deps/dep5.mdwn?revision=173&view=markup
 Upstream-Name: server-config
 Upstream-Contact: Mathias Ertl <mati@fsinf.at>
-Source: https://git.fsinf.at/fsinf/server-config
+Source: https://github.com/fsinf/server-config
 
 Files: *
 Copyright: 2012, Mathias Ertl <mati@fsinf.at>
