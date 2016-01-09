@@ -10,3 +10,4 @@ fsinf-server-config-startssl: file-in-usr-local usr/local/share/ca-certificates/
 fsinf-server-config-startssl: file-in-unusual-dir usr/local/share/ca-certificates/StartCom_Certification_Authority_class4.crt
 fsinf-server-config-startssl: file-in-usr-local usr/local/share/ca-certificates/StartCom_Certification_Authority_Bundle.crt
 fsinf-server-config-startssl: file-in-unusual-dir usr/local/share/ca-certificates/StartCom_Certification_Authority_Bundle.crt
+file-in-unusual-dir usr/local/share/ca-certificates/StartCom_Certification_Authority_class2_IV.crt

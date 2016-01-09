@@ -2,6 +2,7 @@ fsinf-server-config (1:2016.01.08.1) unstable; urgency=low
 
   * Add StartCom Certification Authority class2 IV certificate.
   * Replace (very) old git.fsinf.at links with github.
+  * Add lintian-overrides for scripts without manpage.
 
  -- Mathias Ertl <mati@fsinf.at>  Sat, 09 Jan 2016 13:18:37 +0100
 
