@@ -1,3 +1,9 @@
+fsinf-server-config (1:2016.05.03.1) unstable; urgency=low
+
+  * Add daily cron script to automatically renew Let's Encrypt certificates.
+
+ -- Mathias Ertl <mati@fsinf.at>  Tue, 03 May 2016 19:12:01 +0200
+
 fsinf-server-config (1:2016.01.09.1) unstable; urgency=low
 
   * Add StartCom Certification Authority class2 IV certificate.
