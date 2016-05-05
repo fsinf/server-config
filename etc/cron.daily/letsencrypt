@@ -1,4 +1,5 @@
 #!/bin/sh
 # Script that should renew certificates automatically.
 
-[ -x /usr/bin/letsencrypt ] && /usr/bin/letsencrypt renew > /dev/nul
+[ -x /usr/bin/letsencrypt ] && /usr/bin/letsencrypt renew > /dev/null
+exit 0
