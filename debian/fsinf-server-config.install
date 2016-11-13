@@ -3,5 +3,4 @@ etc/mysql
 etc/sysctl.d
 etc/systemd
 etc/letsencrypt
-etc/cron.daily
 usr/bin/apt-up

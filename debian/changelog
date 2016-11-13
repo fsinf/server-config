@@ -1,3 +1,9 @@
+fsinf-server-config (1:2016.11.13.1) unstable; urgency=low
+
+  * Remove letsencrypt cronjob, certbot now does this by itself.
+
+ -- Mathias Ertl <mati@fsinf.at>  Sun, 13 Nov 2016 19:57:25 +0100
+
 fsinf-server-config (1:2016.05.05.1) unstable; urgency=low
 
   * Fix typos in script to renew Let's Encrypt certificates.
