@@ -1,3 +1,9 @@
+fsinf-server-config (1:2017.07.09.1) unstable; urgency=low
+
+  * Move fsinf-create-cert to fsinf-server-config package.
+
+ -- Mathias Ertl <mati@fsinf.at>  Sun, 09 Jul 2017 09:40:20 +0200
+
 fsinf-server-config (1:2016.11.13.1) unstable; urgency=low
 
   * Remove letsencrypt cronjob, certbot now does this by itself.
