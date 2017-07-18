@@ -7,6 +7,18 @@ EDITOR=${EDITOR:-vim}
 
 if [[ -z "$hostname" ]]; then
     echo "Usage: $0 [hostname]"
+    echo ""
+    echo "`basename $0` is a script to create signed certificates. It will create a
+a private key and output a Certificate Signing Request (CSR) you can pass to
+the Certificate Authority. Once you have obtained a signed certificate, you can
+paste it in your favorite editor.
+
+The private key will be in /etc/ssl/priv/\$hostname.key and the public key in
+/etc/ssl/public/\$hostname.pem. This is consistent with Apache macros provided
+by the "fsinf-server-config-apache" package. Old certificates are backuped.
+
+NOTE: The hostname here is only relevant for the file path. Only the public key
+contains one (or multiple) hostnames. Tell your CA what you need!"
     exit 1
 fi
 
