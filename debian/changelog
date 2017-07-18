@@ -3,8 +3,12 @@ fsinf-server-config (1:2017.07.09.1) unstable; urgency=low
   * Move fsinf-create-cert to fsinf-server-config package.
   * Remove fsinf-server-config-startssl package, StartCom is no longer
     relevant.
-  * Add check to fsinf-create-cert to restart Apache only if apache2ctl
-    actually exists.
+  * Improvements to fsinf-create-cert:
+
+    * Add check to fsinf-create-cert to restart Apache only if apache2ctl
+      actually exists.
+    * Display an instructive prompt when the user is expected to press <Enter>
+      to paste the signed certificate.
 
  -- Mathias Ertl <mati@fsinf.at>  Sun, 09 Jul 2017 09:40:20 +0200
 

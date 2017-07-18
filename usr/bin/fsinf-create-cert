@@ -33,6 +33,7 @@ sg ssl-cert -c "openssl genrsa -out $key 4096" > /dev/null 2> /dev/null
 sg ssl-cert -c "openssl req -new -key $key -out $csr -utf8 -batch -sha256 -subj '$subject'" > /dev/null
 cat $csr
 
+echo "Press <Enter> open vim so you can paste a signed cert."
 read
 
 # set umask to world-readable again (.pem are not secret)
