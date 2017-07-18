@@ -9,6 +9,7 @@ fsinf-server-config (1:2017.07.09.1) unstable; urgency=low
       actually exists.
     * Display an instructive prompt when the user is expected to press <Enter>
       to paste the signed certificate.
+    * Honor $EDITOR for pasting a signed cert.
 
  -- Mathias Ertl <mati@fsinf.at>  Sun, 09 Jul 2017 09:40:20 +0200
 
