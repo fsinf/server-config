@@ -43,7 +43,11 @@ vim $pem
 rm $csr
 
 if [[ $RESTART == "y" ]]; then
-    apache2ctl -t && /etc/init.d/apache2 restart
+    if [[ $(hash apache2ctl 2> /dev/null) ]]; then
+        apache2ctl -t && /etc/init.d/apache2 restart
+    else
+        echo "apache2ctl not found, not restarting Apache."
+    fi
 fi
 
 openssl x509 -noout -in $pem -fingerprint -md5
