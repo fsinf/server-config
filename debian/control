@@ -12,12 +12,7 @@ Package: fsinf-server-config
 Architecture: all
 Depends: ${misc:Depends}, apt-transport-https, ca-certificates-fsinf,
  libnet-ssleay-perl, ca-certificates-letsencrypt
+Conflicts: fsinf-server-config-startssl
 Description: Common configuration for fsinf servers
  This package contains some common configuration for servers maintained
  by the Fachschaft Informatik - https://fsinf.at.
-
-Package: fsinf-server-config-startssl
-Architecture: all
-Depends: ssl-cert, ${misc:Depends}
-Description: StartSSL intermediate certificates
- This package installs startssl intermediate certificates

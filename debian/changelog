@@ -1,6 +1,8 @@
 fsinf-server-config (1:2017.07.09.1) unstable; urgency=low
 
   * Move fsinf-create-cert to fsinf-server-config package.
+  * Remove fsinf-server-config-startssl package, StartCom is no longer
+    relevant.
 
  -- Mathias Ertl <mati@fsinf.at>  Sun, 09 Jul 2017 09:40:20 +0200
 
