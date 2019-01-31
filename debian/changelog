@@ -1,3 +1,10 @@
+fsinf-server-config (1:2019.01.31.1) unstable; urgency=low
+
+  * No longer install /etc/letsencrypt/cli.ini, as this file is now also
+    installed by certbot-0.28.0.
+
+ -- Mathias Ertl <mati@fsinf.at>  Thu, 31 Jan 2019 19:21:21 +0100
+
 fsinf-server-config (1:2017.07.18.1) unstable; urgency=low
 
   * Move fsinf-create-cert to fsinf-server-config package.

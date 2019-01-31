@@ -2,6 +2,6 @@ etc/apt/
 etc/mysql
 etc/sysctl.d
 etc/systemd
-etc/letsencrypt
+#etc/letsencrypt
 usr/bin/apt-up
 usr/bin/fsinf-create-cert
