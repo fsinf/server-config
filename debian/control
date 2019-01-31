@@ -2,8 +2,8 @@ Source: fsinf-server-config
 Section: misc
 Priority: optional
 Maintainer: Mathias Ertl <mati@fsinf.at>
-Standards-Version: 3.9.6
-Build-Depends: debhelper (>= 9)
+Standards-Version: 4.3.0
+Build-Depends: debhelper (>= 11)
 Homepage: https://github.com/fsinf/server-config
 Vcs-Browser: https://github.com/fsinf/server-config
 Vcs-Git: https://github.com/fsinf/server-config.git
