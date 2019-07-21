@@ -4,6 +4,9 @@ fsinf-server-config (1:2019.01.31.1) unstable; urgency=low
   * Use $EDITOR instead of hardcoded vim
   * Create a certificate chain file, CA certs file can be set by CHAINFILE
 
+  [apt-up]
+  * Call apt-get clean after dist-upgrade
+
  -- Mathias Ertl <mati@fsinf.at>  Sun, 21 Jul 2019 10:36:53 +0200
 
 fsinf-server-config (1:2019.01.31.1) unstable; urgency=low
