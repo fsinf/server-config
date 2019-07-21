@@ -1,5 +1,13 @@
 fsinf-server-config (1:2019.01.31.1) unstable; urgency=low
 
+  [fsinf-create-cert]
+  * Use $EDITOR instead of hardcoded vim
+  * Create a certificate chain file, CA certs file can be set by CHAINFILE
+
+ -- Mathias Ertl <mati@fsinf.at>  Sun, 21 Jul 2019 10:36:53 +0200
+
+fsinf-server-config (1:2019.01.31.1) unstable; urgency=low
+
   * No longer install /etc/letsencrypt/cli.ini, as this file is now also
     installed by certbot-0.28.0.
   * Switch to debhelper 11.

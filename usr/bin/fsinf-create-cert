@@ -4,6 +4,7 @@ set -e
 hostname=$1
 RESTART=${RESTART:-y}
 EDITOR=${EDITOR:-vim}
+CHAINFILE=${CHAINFILE:-/etc/ssl/certs/fsinf_at_2019_server.pem}
 
 if [[ -z "$hostname" ]]; then
     echo "Usage: $0 [hostname]"
@@ -28,12 +29,16 @@ cd /etc/ssl
 key=private/$hostname.key
 csr=$hostname.csr
 pem=public/$hostname.pem
+chain=public/$hostname-chain.pem
 
 if [[ -e "$key" ]]; then
     mv --backup=numbered $key $key.backup
 fi
 if [[ -e "$pem" ]]; then
     mv --backup=numbered $pem $pem.backup
+fi
+if [[ -e "$chain" ]]; then
+    mv --backup=numbered $chain $chain.backup
 fi
 
 # set umask
@@ -52,7 +57,8 @@ read
 # set umask to world-readable again (.pem are not secret)
 umask 0022
 
-vim $pem
+$EDITOR $pem
+cat $pem $CHAINFILE > $chain
 
 rm $csr
 
