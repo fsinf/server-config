@@ -1,5 +1,7 @@
 fsinf-server-config (1:2019.01.31.1) unstable; urgency=low
 
+  * Remove old dependency on ca-certificates-letsencrypt
+
   [fsinf-create-cert]
   * Use $EDITOR instead of hardcoded vim
   * Create a certificate chain file, CA certs file can be set by CHAINFILE
