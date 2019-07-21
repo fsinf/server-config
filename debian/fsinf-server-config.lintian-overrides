@@ -1,1 +1,2 @@
-binary-without-manpage usr/bin/apt-up
+fsinf-server-config: binary-without-manpage usr/bin/apt-up
+fsinf-server-config: binary-without-manpage usr/bin/fsinf-create-cert
