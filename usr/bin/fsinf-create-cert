@@ -4,7 +4,7 @@ set -e
 hostname=$1
 RESTART=${RESTART:-y}
 EDITOR=${EDITOR:-vim}
-CHAINFILE=${CHAINFILE:-/etc/ssl/certs/fsinf_at_2019_server.pem}
+CHAINFILE=${CHAINFILE:-/etc/ssl/certs/fsinf_at_2025_server.pem}
 
 if [[ -z "$hostname" ]]; then
     echo "Usage: $0 [hostname]"
